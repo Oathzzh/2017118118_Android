@@ -21,8 +21,15 @@ Android默认启动模式就是standard模式，或者也可在AndroidManifest.x
 ## singleTask模式如下：
 通过在AndroidManifest.xml文件指定为singleTask模式：
 ![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/3.1.png)
-
-## singleTask模式工作原理
+### singleTask模式工作原理
 从以下打印信息中可以看出，在Hello2启动Hello1时，返回栈中已经存在Hello1的实例，并且就在Hello2下面，Hello1活动前的所有活动都出栈，于是Hello2出栈，Hello1重回栈顶活动，因此Hello1的onRestart（）方法和Hello2的onDestroy（）方法会得到执行。
 
 ![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/3.2.png)
+
+## singleInstance模式如下：
+通过在AndroidManifest.xml文件指定为singleInstance模式：
+![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/4.1.png)
+### singleInstance模式工作原理
+此模式下会有单独的返回栈来解决共享活动实例的问题，从以下打印信息中可得知，启动了Hello1之后，再启动Hello2，当返回Hello1时，返回的是之前创建的Hello1，返回Hello2也是之前创建的Hello2.
+![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/4.2.png)
+
