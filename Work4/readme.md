@@ -7,7 +7,7 @@ Android默认启动模式就是standard模式，或者也可在AndroidManifest.x
 ![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/1.2.png)
 
 ## singleTop模式如下：
-通过在AndroidManifest.xml文件指定为singTop模式：
+通过在AndroidManifest.xml文件指定为singleTop模式：
 ![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/2.1.png)
 ### singleTop模式工作原理
 在此模式中，只要在栈顶活动已存在，就不会再创建新活动，此模式能很好地解决重复创建栈顶活动的问题，多次点击按钮如图所示：
@@ -18,4 +18,11 @@ Android默认启动模式就是standard模式，或者也可在AndroidManifest.x
 
 ![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/2.3.png)
 
+## singleTask模式如下：
+通过在AndroidManifest.xml文件指定为singleTask模式：
+![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/3.1.png)
 
+## singleTask模式工作原理
+从以下打印信息中可以看出，在Hello2启动Hello1时，返回栈中已经存在Hello1的实例，并且就在Hello2下面，Hello1活动前的所有活动都出栈，于是Hello2出栈，Hello1重回栈顶活动，因此Hello1的onRestart（）方法和Hello2的onDestroy（）方法会得到执行。
+
+![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/3.2.png)
