@@ -26,7 +26,7 @@ public class Hello1 extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Hello1.this,Hello1.class);
+                Intent intent = new Intent(Hello1.this,Hello2.class);
                 startActivity(intent);
             }
         });
