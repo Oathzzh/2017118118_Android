@@ -14,4 +14,4 @@ Android默认启动模式就是standard模式，或者也可在AndroidManifest.x
 ![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/2.2.png)
 
 但在多活动切换时，比如已有一个Hello1，然后启动Hello2，由于此时Hello2到了栈顶，再点击启动Hello1时，仍会创建新活动：
-！[images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/2.3png)
+![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/2.3.png)
