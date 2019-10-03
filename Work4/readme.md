@@ -11,6 +11,7 @@ Android默认启动模式就是standard模式，或者也可在AndroidManifest.x
 ![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/2.1.png)
 ### singleTop模式工作原理
 在此模式中，只要在栈顶活动已存在，就不会再创建新活动，此模式能很好地解决重复创建栈顶活动的问题，多次点击按钮如图所示：
+
 ![images](https://github.com/Oathzzh/2017118118_Android/blob/master/Work4/images/2.2.png)
 
 但在多活动切换时，比如已有一个Hello1，然后启动Hello2，由于此时Hello2到了栈顶，再点击启动Hello1时，仍会创建新Hello1：
