@@ -109,7 +109,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 dialog.setCancelable(false);
                 dialog.setPositiveButton("删除", new DialogInterface.OnClickListener() {
                     final String inputText = editText.getText().toString();
-
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         save("");
