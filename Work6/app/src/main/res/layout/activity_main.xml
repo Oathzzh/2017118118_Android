@@ -4,16 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="请输入姓名和电话号码" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入姓名和号码" />
 
         <Button
             android:id="@+id/add"
@@ -21,14 +21,19 @@
             android:layout_height="wrap_content"
             android:text="保存" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="删除" />
-
     </LinearLayout>
-
 
 </LinearLayout>
 
