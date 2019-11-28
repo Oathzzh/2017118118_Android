@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:andorid="http://schemas.android.com/apk/res/android"
+    andorid:layout_width="match_parent"
+    andorid:layout_height="match_parent">
+
+    <Button
+        andorid:id="@+id/start"
+        andorid:layout_width="match_parent"
+        andorid:layout_height="wrap_content"
+        andorid:text="start" />
+
+    <TextView
+        andorid:id="@+id/text"
+        andorid:layout_width="wrap_content"
+        andorid:layout_height="wrap_content"
+        andorid:layout_centerInParent="true"
+        andorid:text="自加计数器"
+        andorid:textSize="20sp" />
+
+</RelativeLayout>
